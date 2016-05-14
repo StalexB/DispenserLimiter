@@ -1,0 +1,5 @@
+# throttle time in seconds
+throttle_time: 5
+
+# chars of the throttle time bar
+chars: 25
