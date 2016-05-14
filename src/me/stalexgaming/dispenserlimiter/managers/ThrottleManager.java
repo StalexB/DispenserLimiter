@@ -20,7 +20,7 @@ public class ThrottleManager
 
     private int throttleTime;
     private int chars;
-    private List<Location>throttledDispensers;
+    private List<Location> throttledDispensers;
 
     public ThrottleManager(Main main)
     {
@@ -57,6 +57,7 @@ public class ThrottleManager
                     }
                     i--;
                 } else {
+                    throttledDispensers.remove(loc);
                     hologram.destroy();
                     this.cancel();
                 }
